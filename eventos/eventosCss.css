@@ -1,0 +1,271 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #F4F4F4;
+    color: #333;
+}
+
+#eventos h2 {
+    font-size: 2rem;
+    color: #0078A8;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #00AEEF;
+    color: white;
+    padding: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.title {
+    margin-left: 10%;
+    text-align: left;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    background: #00AEEF;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 20px;
+    width: 330px;
+    min-height: 370px;
+    border-radius: 20px;
+    background: #00AEEF;
+    box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
+    transition: 0.4s;
+}
+
+.card:hover {
+    translate: 0 -10px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-weight: bold;
+    color: #FFFF;
+    margin: 15px 0 0 10px;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    min-height: 170px;
+    background-color: #c9c9c9;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body {
+    margin: 13px 0 0 10px;
+    color: rgb(31, 31, 31);
+    font-size: 15px;
+    margin: 10px 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footer {
+    margin: 15px 15px;
+    font-size: 0.9rem;
+    color: #F4F4F4;
+    text-align: right;
+    font-style: italic;
+}
+
+.by-name {
+    font-weight: 700;
+}
+
+#Comentarios h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0078A8;
+    text-align: center;
+    margin: 0 auto 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #0078A8;
+    display: block;
+    width: fit-content;
+    padding-bottom: 0.5rem;
+    padding-top: 70px;
+}
+
+.testimonios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.comment-card {
+    width: fit-content;
+    background-color: #f2f3f7;
+    border-radius: 0.75em;
+    cursor: pointer;
+    transition: ease 0.2s;
+    box-shadow: 1em 1em 1em #d8dae0b1, -0.75em -0.75em 1em #ffffff;
+    border: 1.5px solid #f2f3f7;
+}
+
+.comment-card:hover {
+    background-color: #d3ddf1;
+    border: 1.5px solid #1677ff;
+}
+
+.comment-container {
+    margin-top: 1.25em;
+    margin-bottom: 1.375em;
+    margin-left: 1.375em;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 0.75em;
+}
+
+.comment-status-ind {
+    width: 0.625em;
+    height: 0.625em;
+    background-color: #ff0000;
+    margin: 0.375em 0;
+    border-radius: 0.5em;
+}
+
+.comment-text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    color: #333;
+}
+
+.comment-time {
+    font-size: 0.875em;
+    color: #777;
+}
+
+.comment-text-link {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.comment-button-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+.comment-secondary-cta {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    cursor: pointer;
+}
+
+.comment-primary-cta {
+    font-size: 15px;
+    background-color: transparent;
+    font-weight: 600;
+    color: #1677ff;
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.comment-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875em;
+}
