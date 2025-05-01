@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Conferencias</title>
+    <link rel="stylesheet" href="/registro/registroCss.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="../src/uam.png" alt="Logo UAM" class="logo">
+            </div>
+            <div class="title">
+                <h1>Registro de Eventos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../eventos/eventos.html">Eventos</a></li>
+                    <li><a href="registro.html" class="active">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="registro">
+            <h2>Formulario de Registro</h2>
+            <p>Completa el formulario para registrarte en las conferencias de tu interés.</p>
+            <form class="form" id="registro-form">
+                <p class="title">Registro</p>
+                <p class="message">Regístrate ahora para asistir a nuestras conferencias.</p>
+            
+                <!-- Nombre Completo -->
+                <label>
+                    <input required="" placeholder="" type="text" id="nombre" class="input">
+                    <span>Nombre Completo</span>
+                </label>
+            
+                <!-- Correo Electrónico -->
+                <label>
+                    <input required="" placeholder="" type="email" id="email" class="input">
+                    <span>Correo Electrónico</span>
+                </label>
+            
+                <!-- Carrera -->
+                <label>
+                    <select required="" id="carrera" class="input">
+                        
+                        <option value="ingenieria">Ingeniería</option>
+                        <option value="administracion">Administración</option>
+                        <option value="diseño">Diseño</option>
+                        <option value="medicina">Medicina</option>
+                    </select>
+                    <span>Carrera</span>
+                </label>
+            
+                <!-- Conferencias -->
+                <div class="flex">
+                    <label>
+                        <input type="checkbox" name="conferencia" value="github" class="input-checkbox">
+                        <span>Uso de GitHub</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="conferencia" value="docker" class="input-checkbox">
+                        <span>Introducción a Docker</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="conferencia" value="linux" class="input-checkbox">
+                        <span>Servidores Linux</span>
+                    </label>
+                </div>
+            
+                <!-- Botón de Enviar -->
+                <button class="submit">Registrarme</button>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Universidad Americana (UAM). Todos los derechos reservados.</p>
+    </footer>
+    <script src="/function.js"></script>
+</body>
+</html>
